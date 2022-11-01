@@ -16,6 +16,7 @@ public abstract class Spaceship implements Moveable{
         this.ammo = 0;
     }
 
+
     public Spaceship(int fuel, int ammo, int maxAmmo, boolean isAim) throws FileNotFoundException {
         this.fuel = fuel;
         this.ammo = ammo;

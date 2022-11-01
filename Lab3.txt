@@ -1,3 +1,0 @@
-Starting the engines....
-Space ship has: 450 fuel 
-Space Ship moved down

@@ -3,11 +3,13 @@ import java.io.*;
 
 
 public class Spaceship {
+    private static int spaceshipCount;
 
     private Movement movementDevice;
     private RelativePosition pos;
     private Start  start;
     private PrintWriter fout;
+    private int fuel;
 
     public Spaceship() throws FileNotFoundException
     {
@@ -19,12 +21,14 @@ public class Spaceship {
 
     public Spaceship(int res) throws FileNotFoundException
     {
-        movementDevice = new Movement();
-        pos = new RelativePosition();
-        start = new Start();
-
-        fout = new PrintWriter(new File("Lab3.txt"));
+        spaceshipCount++;
+        this.fuel = res;
     }
+    public static int getSpaceshipCountCount() {
+        return spaceshipCount;
+    }
+
+
 
 
     public void clickStart()
@@ -65,6 +69,13 @@ public class Spaceship {
 
         fout.print("Spaceship -> moved right\n");
         fout.flush();
+    }
+
+    public void checkifEmpty (Spaceship ship) {
+        if (ship==null) {
+            System.out.println("empty");
+        }
+        else {System.out.println(ship);}
     }
 
     public void MoveLeft()

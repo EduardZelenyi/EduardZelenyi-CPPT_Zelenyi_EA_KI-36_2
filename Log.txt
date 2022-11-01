@@ -1,0 +1,17 @@
+
+Ammo10
+MaxAmmo50
+Aimed
+Boom
+Aimed
+Boom
+Reloading..
+Aimed
+Boom
+
+Ammo49
+MaxAmmo50
+You've done 2 hits
+You've done 3hits, your current ammo is44Information deleted
+Ammo0
+MaxAmmo0

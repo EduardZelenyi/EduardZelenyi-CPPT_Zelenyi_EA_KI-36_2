@@ -9,8 +9,8 @@ public class Calc {
 
     public void writeResTxt(String fName) throws FileNotFoundException
     {
-        PrintWriter f = new PrintWriter(fName);
-        f.printf("%f ",result);
+        PrintWriter f = new PrintWriter(new FileOutputStream(new File(fName), true));
+        f.printf("%f\n ",result);
         f.close();
     }
     public void readResTxt(String fName)

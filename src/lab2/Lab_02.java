@@ -1,3 +1,5 @@
+package lab2;
+
 import java.io.*;
 import java.util.*;
 

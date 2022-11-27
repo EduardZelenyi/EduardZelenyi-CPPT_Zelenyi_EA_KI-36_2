@@ -1,3 +1,5 @@
+package lab1;
+
 class lab1 {
     public static void main(String[] args)
     {
